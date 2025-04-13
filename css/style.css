@@ -1,0 +1,72 @@
+:root{
+  --first-theme-color:#24353f;
+  --second-theme-color:#17a2b8;
+  --card-theme-color:#253944;
+  --logout-btn:#ffc107;
+}
+body{
+  background-color: var(--first-theme-color);
+}
+.card{
+  background-color:var(--card-theme-color);
+  width: 65%;
+  box-shadow: .625rem .5625rem 3rem .375rem rgba(0,0,0,0.75);
+}
+.card .form-control{
+  background-color: var(--card-theme-color);
+  color: white;
+}
+.card .form-control:focus{
+  box-shadow:  0 0 0 rgba(13, 110, 253, .25)
+}
+.card .form-control::placeholder{
+  color: lightgray;
+}
+h1,button{
+  color:var(--second-theme-color);
+}
+.btn{
+  background-color: #24353f;
+  color: var(--second-theme-color);
+  border: .0625rem solid var(--second-theme-color);
+  transition:background-color 0.5s ,color 0.5s ;
+}
+.btn:hover{
+  background-color: var(--second-theme-color);
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+a:not(.navbar-brand):hover{
+  text-decoration: underline;
+}
+nav{
+  box-shadow: 1px 7px 27px 1px rgba(0,0,0,0.75);
+}
+.logout{
+  color: lightgray;
+  border: .0625rem solid var(--logout-btn);
+  transition:background-color 0.5s ,color 0.5s ;
+  margin-top: .9375rem;
+  width: 100%;
+}
+.logout:hover{
+  background-color: var(--logout-btn);
+  color: white;
+}
+.navbar-toggler{
+  border: .0625rem solid rgb(92, 88, 88);
+  transition: border-color 0.4s;
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+  border-color: rgb(219, 206, 206);
+}
+
+@media screen and (min-width:992px) {
+  .logout{
+    width: 6.25rem;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="shortcut icon" href="../imgs/homeicon.webp" type="image/x-icon">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="container pt-4">
+    <div class="card text-center px-4 px-lg-5 py-5 mx-auto mt-5">
+      <h1 class="text-capitalize fw-medium p-2">smart login system</h1>
+      <form>
+        <input type="email" class="form-control mt-3" placeholder="Enter your email" id="userEmail">
+        <div class="alert alert-info text-start py-2 mt-2 d-none" role="alert" id="alertEmail">
+        
+        </div>
+        <input type="password" class="form-control mt-3" placeholder="Enter your password" id="userPassword">
+        <div class="alert alert-info text-start py-2 mt-2 d-none" role="alert" id="alertPassword">
+        
+        </div>
+        <button class="btn mt-4 w-100" type="submit" id="signInBtn">Login</button>
+        <p class="text-white mt-4">Don't have an account?<a href="signup.html" class="text-reset ms-2"> Sign Up</a></p>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="../js/login.js"></script>
+</body>
+
+</html>
