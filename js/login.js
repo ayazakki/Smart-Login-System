@@ -21,7 +21,7 @@ function signIn() {
   }
   if(isFound){
     localStorage.setItem("loggedInUser",loggedInUser)
-    window.location.href="../home.html"
+    window.location.href="home.html"
   }else if(isEmailFound&&!(isPasswordFound)){
     document.querySelector("#alertPassword").classList.replace("d-none","d-flex")
     document.querySelector("#alertPassword").innerHTML=`<p class="mb-0 mt-1"> Please enter the same password you created during sign-up to access your account.</p>`
