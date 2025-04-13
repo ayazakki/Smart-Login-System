@@ -4,10 +4,10 @@ var loggedInUser=localStorage.getItem("loggedInUser")
 if(loggedInUser!=null){
   headerContent.innerHTML=`<h1 class="fw-normal">Welcome ${loggedInUser}</h1>`
 }else{
-  window.location.href="../auth/login.html"
+  window.location.href="../index.html"
 }
 
 logOutBtn.addEventListener("click",function(){
   localStorage.removeItem("loggedInUser")
-  window.location.href="../auth/login.html"
+  window.location.href="../index.html"
 })

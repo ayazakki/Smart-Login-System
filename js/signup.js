@@ -32,7 +32,7 @@ function signUp() {
       users.push(userData);
       localStorage.setItem("users", JSON.stringify(users));
       document.querySelector("#success").classList.replace("d-none", "d-flex");
-      window.location.href="../auth/login.html"
+      window.location.href="../index.html"
     }
   
   }else{
